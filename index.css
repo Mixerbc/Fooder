@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text:100,300,400,500,600,700,800,900&display=swap');
+
+/* font-family: 'Big Shoulders Text', cursive; */
+
+.nav-flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    width: 100%;
+    padding: 0;
+}
+
+.nav-flex-row li {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 20px 15px;
+}
+
+.nav-flex-row li a {
+    font-family: 'Big Shoulders Text', cursive;
+    color: #ffffff;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.section-intro {
+    height: 820px;
+    background-image: url(img/petr-sevcovic-qE1jxYXiwOA-unsplash.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-intro h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 4em;
+    font-weight: 700;
+}
+
+.section-intro header {
+    display: flex;
+    flex: 4;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-to-book-wrapper {
+    flex: 1;
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    background-color:#fefdf2;
+    padding: 50px 30px;
+}
+
+.link-to-book {
+    color: #ffffff;
+    display: block;
+    border: 2px solid #ffffff;
+    padding: 5px 10px;
+}
+
+a.link-to-book:hover {
+    background-color: #ffffff;
+    color: #95999e;
+    text-decoration: none;
+}
+
+.about-section p {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 1.8em;
+    text-transform: capitalize;
+}
+.about-section h2{
+
+    
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 3rem;
+
+}
+
+.carousel-inner {
+    height: 700px;
+}
+
+.row-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column-form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 30px 20px;
+}
+
+.btn.btn-primary {
+    font-family: 'Big Shoulders Text', cursive;
+    color: #ffffff;
+    background-color: #95999e;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 5px 10px;
+    letter-spacing: 2px;
+    border: 0;
+}
+
+.btn.btn-primary:hover {
+    background-color: #747474;
+}
+.opening-time,
+.contact-adress {
+    flex: 1;
+    margin: 30px 20px;
+    font-size: 1.2em;
+}
+
+.form-group p {
+    font-size: 1.2em;
+}
+
+.opening-time p span,
+.contact-adress p span {
+    display: block;
+}
+.opening-times{
+    display: flex;
+    justify-content: center;
+    width: 80% ;
+
+   
+    
+}
+
+@media (min-width:577px) and (max-width: 800px) {
+
+    .section-intro {
+        height: 500px;
+    }
+
+    .about-section p,
+    .about-section h3 {
+        font-size: 20px;
+    }
+
+    .carousel-inner {
+        height: auto;
+    }
+
+    .row-flex {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .section-intro {
+        height: 300px;
+    }
+
+    .about-section {
+        padding: 30px;
+    }
+
+    .section-intro h1 {
+        font-size: 2em;
+    }
+
+    .about-section p,
+    .about-section h3 {
+        font-size: 15px;
+    }
+
+    .carousel-inner {
+        height: auto;
+    }
+
+    .row-flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row-flex h3 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .form-group p {
+        font-size: 15px;
+    }
+
+    .opening-time p span,
+    .contact-adress p span {
+        font-size: 15px;
+        text-align: center;
+    }
+
+}
+.contenedor-centrado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .contenedor-centrado  h1{
+    
+    background-color: #ebe0a6;
+    padding: 25px;
+    padding-bottom: 5px;
+    border-radius: 3rem 3rem  1px 1px;
+    margin: 0;
+    font-family: 'Big Shoulders Text', cursive;
+
+    
+  }
+  .contenedor-centrado h1:hover{
+
+    background-color: #f8df55;
+    color: white;
+  }
+
+
+.platillos{
+
+    display: inline-block;
+    flex-direction: column;
+    font-family: system-ui;
+
+}
+
+  .platos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: center;
+    
+    
+  }
+
+ 
+
+  .plato img {
+    width: 13rem;
+    height: 150px;
+    border-radius: 5px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    animation: plato 1.5s infinite  alternate-reverse ;
+  }
+
+  .plato h3 {
+    margin: 0;
+    font-size: 24px;
+    font-family: 'Big Shoulders Text', cursive;
+    padding: 5px;
+    
+  }
+
+  .plato p {
+    margin: 0;
+    font-size: 20px;
+    font-family: 'Big Shoulders Text', cursive;
+    
+  }
+
+  .Footer{
+
+    display:flex;
+    justify-content: center;
+    background-color: #e7e4cc;
+    
+  }
+  .plato {
+    width: 19rem;
+    margin: 10px;
+  padding: 24px;
+    border: 5px solid #f8f3d1;
+    border-radius: 4rem;
+    text-align: center;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    
+  }
+
+  
+  
+  
+
+  .plato::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0%;
+    background-color: #f8f3d1;
+    z-index: -1;
+    transition: 1.5s ;
+  
+
+
+
+  }
+  
+  .tillo:hover::before{
+    height: 170%;
+  }
+
+
+
+  
+
+  
+  .menucomida{
+    padding: 20px;
+   
+    
+
+    background-color: #fefdf2;
+  }
+
+  
+
+  .menu{
+
+   border-radius: 4rem;
+   padding: 6rem;
+   
+   background: linear-gradient(#fefdf2,#fffde9, #fefdf2);
+   width: 100%;
+   animation: menu 2s infinite alternate-reverse;
+   
+  }
+
+  
+  @keyframes menu{
+    0% { 
+         
+        border-left: 10px solid #f8f3d1;
+        border-right: 10px solid #f8f3d1 ;
+
+
+
+}
+
+
+    
+    
+    100%{
+        border-left: 20px solid #f8f3d1;
+        border-right: 20px solid #f8f3d1 ;
+       
+        
+   
+   
+
+    }
+
+        
+    }
+    
+
+
+
+
+  
+
+  
+  
+
+  @keyframes plato{
+
+      
+      0%{
+        transform: scale(1);
+
+
+
+      }
+
+      100%{
+        transform: scale(1.15);
+
+
+      }
+  }
+  .final{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 2rem;
+    padding: 5rem;
+    background: linear-gradient(#fefdf2, #e7e4cc);
+    
+
+    
+
+    
+  }
+  
+
+
